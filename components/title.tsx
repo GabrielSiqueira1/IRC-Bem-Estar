@@ -34,7 +34,9 @@ export const TitleWrapper: React.FC<WrapperProps> = ({
 
     return (
         <TitleContext.Provider value={{numOfPages, currentPage}}>
-            <div ref={refContainer} className="relative bg-black text-white">{children}</div>
+            <div ref={refContainer} className="relative bg-black text-white" style={{
+                height: numOfPages * 200 + 'vh'
+            }}>{children}</div>
         </TitleContext.Provider>
     )
 }

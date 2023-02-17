@@ -2,6 +2,7 @@ import React from "react";
 import { useCallback, useContext, useRef, useState } from 'react';
 import { ScrollContext } from "../utils/scroll-observer";
 import s from '../styles/middle.module.css'
+import Image from 'next/image'
 
 const opacityForBlock = (sectionProgress: number, blockNo: number) => {
     const progress = sectionProgress - blockNo
@@ -28,16 +29,28 @@ const Middle: React.FC = () => {
 
     return (
         <div ref={refContainer} className="text-white bg-black">
-            <div className="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-7xl tracking-tight font-semibold">
+            <div className="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold">
                 <div className="leading-[1.15]">
                     <div className={s.skillText}
                     style={{
                         opacity: opacityForBlock(progress, 0)
-                    }}>A alimentação é essencial.</div>
+                    }}>A insuficiência renal crônica é uma doença renal crônica progressiva e contínua, com os rins perdendo sua <strong>capacidade de filtragem</strong> do sangue e parando, aos poucos de funcionar, comprometendo também outras funções tradicionais dos rins.</div>
+                    <div className="items-center justify-center text-center self-center content-center p-10 w-auto">
+                        <div className={s.skillText}
+                        style={{
+                            opacity: opacityForBlock(progress, 0)
+                        }}>
+                        <Image 
+                            src="/assets/middle.png"
+                            width={600}
+                            height={480}
+                            alt="cereais" />
+                        </div>
+                    </div>
                     <span className={`${s.skillText} inline-block after:content-['_']`} style={{
                         opacity: opacityForBlock(progress, 1)
                     }}>
-                        Nas fases inicias da IRC, uma alimentação saudável <strong>inclui diversos cereais, sobretudo cereais integrais </strong>, frutas e legumes frescos.
+                        Por isso a alimentação é essencial. Nas fases inicias da IRC, uma alimentação saudável <strong>inclui diversos cereais, sobretudo cereais integrais </strong>, frutas e legumes frescos.
                     </span>
                     <span className={`${s.skillText} inline-block`} style={{
                         opacity: opacityForBlock(progress, 2)

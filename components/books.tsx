@@ -1,5 +1,5 @@
 import React from "react";
-import { BookBackground, BookContainer, BookLeft, BookLink, BookRight } from "./book";
+import { BookBackground, BookContainer, BookLeft, BookLink, BookLink2, BookRight } from "./book";
 import { Title, TitleBackground, TitleContent, TitleWrapper } from "./title";
 import Image from 'next/image'
 
@@ -10,10 +10,12 @@ const Books = () => {
             <TitleContent><Title page={0} renderContent={({progress}) => (
                 <BookContainer>
                     <BookLeft progress={progress}>
-                        <div>Nós produzimos um livro sobre</div>
-                        <div className="text=3xl md:text-4xl font-semibold">Hortaliças</div>
+                        <div className="text-center">Nós produzimos um livro sobre</div>
+                        <div className="text=3xl md:text-4xl font-semibold text-center">Hortaliças</div>
                         <div className="m-4"></div>
-                        <BookLink href="https://www.google.com">Baixe o livro</BookLink>
+                        <div className="text-center">
+                            <BookLink href="hortalicas.pdf">Baixe o livro</BookLink>
+                        </div>
                     </BookLeft>
                     <BookRight progress={progress}>
                         <Image 
@@ -29,8 +31,20 @@ const Books = () => {
             <TitleContent><Title page={1} renderContent={({progress}) => (
                 <BookContainer>
                     <BookLeft progress={progress}>
-                        <div>Nós produzimos</div>
+                        <div className="text-center">Nós produzimos um livro sobre</div>
+                        <div className="text-3xl md:text-4xl font-semibold text-center">Leguminosas</div>
+                        <div className="m-4"></div>
+                        <div className="text-center">
+                            <BookLink href="leguminosas.pdf">Baixe o livro</BookLink>
+                        </div>
                     </BookLeft>
+                    <BookRight progress={progress}>
+                        <Image 
+                        src="/assets/img/books/leguminosas.png"
+                        width={840}
+                        height={1620}
+                        alt="leguminosas" />
+                    </BookRight>
                 </BookContainer>
             )}
             ></Title>
@@ -38,8 +52,20 @@ const Books = () => {
             <TitleContent><Title page={2} renderContent={({progress}) => (
                 <BookContainer>
                     <BookLeft progress={progress}>
-                        <div>Nós produzimos</div>
+                        <div className="text-center">Também produzimos um livro sobre</div>
+                        <div className="text=3xl md:text-4  xl font-semibold text-center">Frutas</div>
+                        <div className="m-4"></div>
+                        <div className="text-center">
+                            <BookLink href="frutas.pdf">Baixe o livro</BookLink>
+                        </div>
                     </BookLeft>
+                    <BookRight progress={progress}>
+                        <Image 
+                        src="/assets/img/books/frutas.png"
+                        width={840}
+                        height={1620}
+                        alt="frutas" />
+                    </BookRight>
                 </BookContainer>
             )}
             ></Title>
@@ -47,9 +73,20 @@ const Books = () => {
             <TitleContent><Title page={3} renderContent={({progress}) => (
                 <BookContainer>
                     <BookLeft progress={progress}>
-                        <div>Nós produzimos</div>
+                        <div className="text-center">Baixe outros livros sobre esse assunto</div>
+                        <div className="m-4"></div>
+                        <div className="text-center">
+                            <BookLink2 href="livros.zip">Baixe o conjunto</BookLink2>
+                        </div>
                     </BookLeft>
-                </BookContainer>    
+                    <BookRight progress={progress}>
+                        <Image 
+                        src="/assets/img/books/cereais.png"
+                        width={840}
+                        height={1620}
+                        alt="cereais" />
+                    </BookRight>
+                </BookContainer>
             )}
             ></Title>
             </TitleContent>

@@ -25,7 +25,7 @@ export const BookLeft: React.FC<{children?: React.ReactNode, progress: number}> 
         <div className="flex flex-col items-center justify-center text-3xl lg:text-3xl h-[40vh] lg:h-auto" style={{
             transform: `translateY(${translateY}px)`
         }}>
-            <div className="leading-10">
+            <div className="leading-10 flex flex-col justify-center items-centers">
                 {children}
             </div>
         </div>
@@ -59,7 +59,16 @@ export const BookLink: React.FC<LinkProps> = ({
     children,
     href
 })=>(
-    <Link href={href} target="_blank" rel="nonferrer" className="p-4 w-1/2 rounded-lg bg-lime-900 text-lg ml-36 text-center">
+    <Link href={href} target="_blank" rel="noopener noreferrer" className="p-4 w-1/2 rounded-lg bg-lime-900 text-lg text-center">
+        {children}
+    </Link>
+)
+
+export const BookLink2: React.FC<LinkProps> = ({
+    children,
+    href
+})=>(
+    <Link href={href} target="_blank" rel="noopener noreferrer" className="p-4 w-1/2 rounded-lg bg-sky-800 text-lg text-center">
         {children}
     </Link>
 )

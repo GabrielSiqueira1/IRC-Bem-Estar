@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <AboutUs />
       <Middle />
       <Books />
-      <AboutUs />
+      <Books />
     </div>
   )
 }

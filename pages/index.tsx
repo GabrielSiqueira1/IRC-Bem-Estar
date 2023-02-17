@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import MastHead from '../components/masthead'
 import AboutUs from '../components/aboutus'
+import Middle from '../components/middle'
 
 const Home: NextPage = () => {
   return (
@@ -14,19 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <MastHead />
       <AboutUs />
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Middle />
     </div>
   )
 }

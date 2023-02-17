@@ -2,22 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-htm,
-bod {
-  background: black;
+body {
   padding: 0;
   margin: 0;
   font-family: SF Pro Display, SF Pro Icons, Helvetica, Jost, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.1;
   letter-spacing: 0em;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }

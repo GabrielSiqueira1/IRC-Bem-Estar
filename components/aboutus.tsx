@@ -12,7 +12,7 @@ const AboutUs: React.FC = () => {
             </div>
             <div className="container max-auto px-11 text-center mt-28 text-lime-900">
                 <h2>Nossa equipe</h2>
-                <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 lg:gap-20">
+                <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-20">
                     <Equipe id="1" name="Ana Alves"/>
                     <Equipe id="2" name="Ana Siqueira"/>
                     <Equipe id="3" name="Isabella"/>

@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  background-color: black;
   padding: 0;
   margin: 0;
   font-family: SF Pro Display, SF Pro Icons, Helvetica, Jost, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

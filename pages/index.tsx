@@ -4,6 +4,7 @@ import Image from 'next/image'
 import MastHead from '../components/masthead'
 import AboutUs from '../components/aboutus'
 import Middle from '../components/middle'
+import Books from '../components/books'
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <MastHead />
       <AboutUs />
       <Middle />
+      <Books />
     </div>
   )
 }

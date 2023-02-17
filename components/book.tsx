@@ -49,3 +49,17 @@ export const BookRight: React.FC<Prop> = ({children, progress}) => {
         </div>
     )
 }
+
+interface LinkProps {
+    children?: React.ReactNode
+    href: string
+}
+
+export const BookLink: React.FC<LinkProps> = ({
+    children,
+    href
+})=>(
+    <Link href={href} target="_blank" rel="nonferrer" className="p-4 w-1/2 rounded-lg bg-lime-900 text-lg ml-36 text-center">
+        {children}
+    </Link>
+)

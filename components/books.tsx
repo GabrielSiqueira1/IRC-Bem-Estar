@@ -10,8 +10,8 @@ const Books = () => {
             <TitleContent><Title page={0} renderContent={({progress}) => (
                 <BookContainer>
                     <BookLeft progress={progress}>
-                        <div className="text-center">Nós produzimos um livro sobre</div>
-                        <div className="text=3xl md:text-4xl font-semibold text-center">Hortaliças</div>
+                        <div className="text-xl md:text-3xl text-center">Nós produzimos um livro sobre</div>
+                        <div className="text-xl md:text-4xl font-semibold text-center">Hortaliças</div>
                         <div className="m-4"></div>
                         <div className="text-center">
                             <BookLink href="hortalicas.pdf">Baixe o livro</BookLink>
@@ -31,8 +31,8 @@ const Books = () => {
             <TitleContent><Title page={1} renderContent={({progress}) => (
                 <BookContainer>
                     <BookLeft progress={progress}>
-                        <div className="text-center">Nós produzimos um livro sobre</div>
-                        <div className="text-3xl md:text-4xl font-semibold text-center">Leguminosas</div>
+                        <div className="text-xl md:text-3xl text-center">Nós produzimos um livro sobre</div>
+                        <div className="text-xl md:text-4xl font-semibold text-center">Leguminosas</div>
                         <div className="m-4"></div>
                         <div className="text-center">
                             <BookLink href="leguminosas.pdf">Baixe o livro</BookLink>
@@ -52,8 +52,8 @@ const Books = () => {
             <TitleContent><Title page={2} renderContent={({progress}) => (
                 <BookContainer>
                     <BookLeft progress={progress}>
-                        <div className="text-center">Também produzimos um livro sobre</div>
-                        <div className="text=3xl md:text-4  xl font-semibold text-center">Frutas</div>
+                        <div className="text-xl md:text-3xl text-center">Também produzimos um livro sobre</div>
+                        <div className="text-xl md:text-4xl font-semibold text-center">Frutas</div>
                         <div className="m-4"></div>
                         <div className="text-center">
                             <BookLink href="frutas.pdf">Baixe o livro</BookLink>
@@ -73,7 +73,7 @@ const Books = () => {
             <TitleContent><Title page={3} renderContent={({progress}) => (
                 <BookContainer>
                     <BookLeft progress={progress}>
-                        <div className="text-center">Baixe outros livros sobre esse assunto</div>
+                        <div className="text-xl md:text-3xl text-center">Baixe outros livros sobre esse assunto</div>
                         <div className="m-4"></div>
                         <div className="text-center">
                             <BookLink2 href="livros.zip">Baixe o conjunto</BookLink2>

@@ -5,6 +5,8 @@ import MastHead from '../components/masthead'
 import AboutUs from '../components/aboutus'
 import Middle from '../components/middle'
 import Books from '../components/books'
+import Recipes from '../components/recipes'
+import Footer from '../components/footer'
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +20,8 @@ const Home: NextPage = () => {
       <AboutUs />
       <Middle />
       <Books />
-      <Books />
+      <Recipes />
+      <Footer />
     </div>
   )
 }

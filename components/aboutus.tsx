@@ -6,7 +6,7 @@ const AboutUs: React.FC = () => {
         <section className={`flex flex-col bg-white py-20 text-xl md:text-2xl`}>
             <div className="container mx-auto px-11 text-black">
                 <p className="leading-tight max-w-5xl mx-auto text-2xl lg:text-3xl tracking-tight">
-                    <strong>Nosso objetivo com esse site é fazer com que você conheça mais sobre a insuficiência renal crônica com o foco na alimentação.</strong>
+                    <strong>Nosso objetivo com esse site é fazer com que você conheça mais sobre a insuficiência renal crônica (IRC) com o foco na alimentação.</strong>
                     Com a intenção de tornar a explicação dinâmica, separa-se o seguinte site em, nossa equipe, os E-books produzidos por nossa equipe, algumas receitas e informações sobre a doença.
                 </p>
             </div>

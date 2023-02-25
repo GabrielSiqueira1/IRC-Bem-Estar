@@ -89,9 +89,9 @@ const Middle: React.FC = () => {
                                 </p>
                             </li>
                         </div>
-                        <div>
+                        <div className="place-self-center">
                             <Image
-                                className="mt-10 ml-16 justify-self-center"
+                                className="mt-10"
                                 src="/assets/middle.png"
                                 width={400}
                                 height={280}

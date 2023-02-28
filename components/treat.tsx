@@ -22,14 +22,14 @@ const Treat: React.FC = () => {
     return (
         <section
             ref={refContainer}
-            className=" bg-white min-h-screen flex flex-col
+            className="bg-white min-h-screen flex flex-col
 sticky top-0 -z-10"
             style={{
                 transform: `transformY(-${progress * 20}vh)`,
             }}
         >
             <div>
-                <div className="absolute  object-cover opacity-20">
+                <div className="absolute object-cover opacity-20">
                     <img src="/assets/treat.png" alt="background" />
                 </div>
             </div>

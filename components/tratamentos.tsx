@@ -8,8 +8,8 @@ const Tratamento: React.FC = () => {
                     <div className="text-center p-10 text-xl md:text-3xl">
                         Existem quatro tipos de tratamentos que podem ser:
                     </div>
-                    <div className="font-light text-xl md:text-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-                        <div>
+                    <div className="font-light text-xl md:text-2xl grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2">
+                        <div className="xl:mr-5">
                             <div className="bg-lime-500 text-black p-10 list-item">
                                 <li>
                                     <p>
@@ -46,8 +46,8 @@ const Tratamento: React.FC = () => {
                                 </li>
                             </div>
                         </div>
-                        <div className="xl:ml-10">
-                            <div className="bg-lime-500 text-black pt-12 px-10 pb-24 list-item">
+                        <div className="xl:ml-5">
+                            <div className="bg-lime-500 text-black pt-12 px-10 pb-24 list-item mt-10 xl:mt-0">
                                 <li>
                                     <p>
                                         <strong className="font-bold">
@@ -60,14 +60,20 @@ const Tratamento: React.FC = () => {
                                     </p>
                                 </li>
                             </div>
-                            <div className="bg-lime-500 text-black p-10 list-item mt-10">
-                                <li className="mt-10">
+                            <div className="bg-lime-500 text-black pt-14 px-10 pb-32 list-item mt-10">
+                                <li>
                                     <p>
                                         <strong className="font-bold">
                                             Transplante renal:{" "}
                                         </strong>
                                         é uma opção de tratamento para os
-                                        pacientes que sofrem
+                                        pacientes que sofrem de doença renal
+                                        crônica avançada, é considerado a mais
+                                        completa alternatiava de substituição da
+                                        função renal, tendo como principal
+                                        vantagem a melhor qualidade de vida,
+                                        pois o transplante renal garante mais
+                                        liberdade na rotina diária do paciente.
                                     </p>
                                 </li>
                             </div>

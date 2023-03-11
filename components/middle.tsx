@@ -62,32 +62,28 @@ const Middle: React.FC = () => {
                         }}
                     >
                         <div className="list-item">
-                            <li>
-                                <p>
-                                    <strong className="font-bold">
-                                        Insuficiência renal aguda:{" "}
-                                    </strong>
-                                    ocorre quando há alguma lesão nos rins
-                                    provocando rápida queda nas suas funções;
-                                </p>
-                            </li>
-                            <li className="mt-10">
-                                <p>
-                                    <strong className="font-bold">
-                                        Insuficiência renal crônica:{" "}
-                                    </strong>
-                                    ocorre a perda parcial da função renal, de
-                                    forma lenta, progressiva e irreversível.
-                                    Quando é{" "}
-                                    <strong className="font-bold">
-                                        Terminal
-                                    </strong>
-                                    , leva ao aumento de toxinas e água no
-                                    organismo mais do que ele consegue suportar,
-                                    sendo necessário iniciar um tratamento que
-                                    substitua a função dos rins.
-                                </p>
-                            </li>
+                            <p>
+                                <strong className="font-bold">
+                                    Insuficiência renal aguda:{" "}
+                                </strong>
+                                ocorre quando há alguma lesão nos rins
+                                provocando rápida queda nas suas funções;
+                            </p>
+                            <p className="mt-10 list-item">
+                                <strong className="font-bold">
+                                    Insuficiência renal crônica:{" "}
+                                </strong>
+                                ocorre a perda parcial da função renal, de
+                                forma lenta, progressiva e irreversível.
+                                Quando é{" "}
+                                <strong className="font-bold">
+                                    Terminal
+                                </strong>
+                                , leva ao aumento de toxinas e água no
+                                organismo mais do que ele consegue suportar,
+                                sendo necessário iniciar um tratamento que
+                                substitua a função dos rins.
+                            </p>
                         </div>
                         <div className="place-self-center">
                             <Image

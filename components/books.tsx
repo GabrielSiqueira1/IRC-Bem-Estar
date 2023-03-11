@@ -88,7 +88,7 @@ const Books = () => {
                         <div className="text-xl md:text-3xl text-center">Baixe outros livros sobre esse assunto</div>
                         <div className="m-4"></div>
                         <div className="text-center">
-                            <BookLink2 href="livros.zip">Baixe o conjunto</BookLink2>
+                            <BookLink2 href="/assets/docs/livros.zip">Baixe o conjunto</BookLink2>
                         </div>
                     </BookLeft>
                     <BookRight progress={progress}>

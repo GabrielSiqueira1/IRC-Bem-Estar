@@ -15,13 +15,13 @@ const Footer: React.FC = () => {
                         Qual a importância da alimentação adequada no tratamento renal?
                     </div>
                     <div
-                        className="{s.skillText}, font-light sm:text-center md:text-center text-xl md:text-2xl grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3"
+                        className="{s.skillText}, font-light text-center sm:text-center md:text-center lg:text-left text-xl md:text-2xl grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3"
                     >
                         <div className="lg:list-item lg:mt-10">
                             <p>
                                 Evitar a evolução do quadro e possíveis complicações;
                             </p>
-                            <p className="lg:mt-10 lg:list-item">
+                            <p className="mt-10 lg:list-item">
                                 Visa auxiliar no controle e prevenção;
                             </p>
                         </div>
@@ -33,16 +33,16 @@ const Footer: React.FC = () => {
                                 height={280} 
                                 alt="cereais"
                             />
-                            <p className="list-item lg:mt-5 lg:ml-5">
+                            <p className="lg:list-item mt-5 lg:ml-5">
                                 Colabora para a redução dos sintomas e promove mais comodidade na rotina;
                             </p>
                         </div>
-                        <div className="lg:ml-10 lg:mt-10 list-item">
+                        <div className="lg:ml-10 mt-10 lg:list-item">
                             <p>
-                                Dieta restrita e bem estrutura, feita exclusivamente a cada indivíduo.;
+                                Dieta restrita e bem estrutura, feita exclusivamente a cada indivíduo;
                             </p>
-                            <p className="lg:mt-10 list-item">
-                                Proporcionar conforto e segurança durante o tratamento;
+                            <p className="mt-10 lg:list-item">
+                                Proporcionar conforto e segurança durante o tratamento.
                             </p>
                         </div>
                     </div>

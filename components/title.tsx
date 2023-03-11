@@ -27,9 +27,9 @@ export const TitleWrapper: React.FC<WrapperProps> = ({
     if(elContainer) {
         const { clientHeight, offsetTop } = elContainer
         const screenH = window.innerHeight
-        const halfH = screenH/2
+        const halfH = screenH/0.7
         const percentY = Math.min(clientHeight + halfH, Math.max(-screenH, scrollY - offsetTop) + halfH) / clientHeight
-        currentPage = percentY * numOfPages
+        currentPage = percentY * (numOfPages+1)
     }
 
     return (
@@ -64,7 +64,7 @@ export const Title: React.FC<Props> = ({ page, renderContent }) => {
     const refContainer = useRef<HTMLDivElement>(null)
 
     let opacity = Math.min(1, Math.max(0, progress * 4))
-    if (progress > 0.85 && page < numOfPages - 1){
+    if (progress > 0.99 && page < numOfPages - 1){
         opacity = Math.max(0, (1.0 - progress)*4)
     }
 

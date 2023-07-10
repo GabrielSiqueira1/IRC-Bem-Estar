@@ -6,6 +6,7 @@ import AboutUs from "../components/aboutus";
 import Middle from "../components/middle";
 import Books from "../components/books";
 import Recipes from "../components/recipes";
+import Test from "../components/bookandrecipes";
 import Footer from "../components/footer";
 import Treat from "../components/treat";
 import Tratamento from "../components/tratamentos";
@@ -26,8 +27,7 @@ const Home: NextPage = () => {
             <Middle />
             <Treat />
             <Tratamento />
-            <Books />
-            <Recipes />
+            <Test />
             <Footer />
         </div>
     );

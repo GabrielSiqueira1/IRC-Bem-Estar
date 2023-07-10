@@ -19,7 +19,7 @@ export const BookBackground: React.FC = () => {
 }
 
 export const BookLeft: React.FC<{children?: React.ReactNode, progress: number}> = ({children, progress}) => {
-    let translateY = Math.max(0, 50 - progress * 3 * 50)
+    let translateY = Math.max(0, 50 - progress * 2 * 50)
     if(progress > 0.85) translateY = Math.max(-50, -(progress - 0.85) * 2 * 50)
     return (
         <div className="flex flex-col items-center justify-center text-3xl lg:text-3xl h-[40vh] lg:h-auto" style={{

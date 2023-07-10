@@ -27,15 +27,15 @@ export const TitleWrapper: React.FC<WrapperProps> = ({
     if(elContainer) {
         const { clientHeight, offsetTop } = elContainer
         const screenH = window.innerHeight
-        const halfH = screenH/0.7
+        const halfH = screenH/4
         const percentY = Math.min(clientHeight + halfH, Math.max(-screenH, scrollY - offsetTop) + halfH) / clientHeight
-        currentPage = percentY * (numOfPages+1)
+        currentPage = percentY * numOfPages
     }
 
     return (
         <TitleContext.Provider value={{numOfPages, currentPage}}>
             <div ref={refContainer} className="relative bg-black text-white" style={{
-                height: numOfPages * 200 + 'vh'
+                height: numOfPages * 100 + 'vh'
             }}>{children}</div>
         </TitleContext.Provider>
     )

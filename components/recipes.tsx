@@ -1,6 +1,6 @@
 import React from "react";
 import { RecipeBackground, RecipeContainer, RecipeLeft, RecipeLink, RecipeLink2, RecipeRight } from "./recipe";
-import { Title, TitleBackground, TitleContent, TitleWrapper } from "./title2";
+import { Title, TitleBackground, TitleContent, TitleWrapper } from "./title";
 import Image from 'next/image'
 
 const Recipes = () => {

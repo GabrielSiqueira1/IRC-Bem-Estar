@@ -68,7 +68,7 @@ export const BookLink2: React.FC<LinkProps> = ({
     children,
     href
 })=>(
-    <Link href={href} target="_blank" rel="noopener noreferrer" className="p-4 w-1/2 rounded-lg bg-sky-800 text-lg text-center">
+    <Link href={href} target="_blank" rel="noopener noreferrer" className="p-4 w-1/2 rounded-lg bg-amber-600 text-lg text-center">
         {children}
     </Link>
 )

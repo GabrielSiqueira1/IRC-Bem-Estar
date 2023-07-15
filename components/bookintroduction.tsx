@@ -4,7 +4,7 @@ import { BookBackground, BookContainer, BookLeft, BookLink, BookLink2, BookRight
 
 const BookIntroduction: React.FC = () => {
     return (
-        <div  className="text-black bg-amber-100">
+        <div className="text-black bg-amber-100">
             <div className="min-h-screen max-w-7xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-xl md:text-2xl lg:text-3xl tracking-tight font-semibold">
                 <div className="leading-[1.15]">
                     <div
@@ -25,7 +25,7 @@ const BookIntroduction: React.FC = () => {
                         </div>
                         <div className="text-center p-10 lg:mt-10">
                             <p>
-                                Para promover uma melhor alimentação, a equipe disponibiliza dois livros de receitas que podem ser baixados abaixo, o livro conta com receitas salgadas e doces. 
+                                Para promover uma melhor alimentação, a equipe disponibiliza dois livros de receitas que podem ser baixados abaixo, o livro conta com receitas salgadas e doces.
                             </p>
                             <div className="text-white mt-10">
                                 <BookLink2 href="/assets/docs/receitas.zip">Baixe o conjunto</BookLink2>

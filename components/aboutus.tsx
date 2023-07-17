@@ -3,7 +3,7 @@ import Equipe from "./equipe";
 
 const AboutUs: React.FC = () => {
     return (
-        <section className={`flex flex-col bg-white py-20 text-xl md:text-2xl`}>
+        <section className={`flex flex-col items-center bg-white py-20 text-xl md:text-2xl`}>
             <div className="container mx-auto px-11 text-black">
                 <p className="leading-tight max-w-5xl mx-auto text-2xl lg:text-3xl tracking-tight">
                     <strong>

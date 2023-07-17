@@ -1,29 +1,17 @@
 import React from "react";
 import Image from 'next/image';
-import { useCallback, useContext, useRef, useState } from 'react';
-import { ScrollContext } from "../utils/scroll-observer";
+import { useCallback, useState } from 'react';
 
 const MastHead: React.FC = () => {
     const [imageLoaded, setImageLoaded] = useState(false)
-    const refContainer = useRef<HTMLDivElement>(null)
-    const {scrollY} = useContext(ScrollContext)
-
-    let progress = 0
-
-    const {current: elContainer } = refContainer
-    if(elContainer){
-        progress = Math.min(1, scrollY/elContainer.clientHeight)
-    }
 
     const handleImageLoaded = useCallback(() => {
         setImageLoaded(true)
     }, [])
 
     return (
-        <div ref={refContainer} className=" bg-white min-h-screen flex flex-col items-center justify-center
-        sticky top-0 -z-10" style={{
-            transform: `transformY(-${progress * 20}vh)`
-        }}>
+        <div className=" bg-white min-h-screen flex flex-col items-center justify-center
+        sticky top-0 -z-10">
             <div className="absolute  object-cover opacity-20">
                 <img src="/assets/header.jpg" alt="background"/>	
             </div>
